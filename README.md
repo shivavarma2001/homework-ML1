@@ -14,6 +14,13 @@ I generated 200 data points using the equation: y = 3 + 4x + ,E where E is Gauss
 Implementation
 Closed-form solution: Used matrix operations with the Normal Equation to directly compute optimal parameters.
 
+Visualization
+Regression Fit Plot
+Original noisy data points are shown as scatter plot.
+Regression lines from:
+Closed-form solution (red solid line)Gradient Descent (green dashed line)Both lines nearly overlap, showing consistency between methods.Loss Curve Plot
+Displays MSE versus iterations for gradient descent.Shows a smooth decrease, confirming convergence.
+
 Gradient Descent:
 Initialized parameters as [0, 0]
 Learning rate = 0.05
@@ -21,5 +28,10 @@ Iterations = 1000
 Tracked Mean Squared Error (MSE) over iterations
 Plotted both the regression lines and the loss curve to visualize convergence.
 
-Results
-Both methods produced very similar results for the intercept and slope, confirming that gradient descent successfully converged to the same solution as the closed-form method. The loss curve showed smooth and consistent improvement over time.
+5. Results & Comparison
+Both methods produce very similar results:
+Closed-form solution: Intercept ≈ 3.02, Slope ≈ 3.99
+Gradient Descent: Intercept ≈ 3.01, Slope ≈ 3.98
+Confirms that gradient descent converges to the same solution as the Normal Equation when the learning rate is chosen properly.
+
+
